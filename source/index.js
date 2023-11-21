@@ -15,18 +15,17 @@ writeableBytes[3] = instructions.MOV_LIT_R2;
 writeableBytes[4] = 0xab;
 writeableBytes[5] = 0xcd;
 
-writeableBytes[3] = instructions.ADD_REG_REG;
-writeableBytes[4] = 0x2;
-writeableBytes[5] = 0x3;
+writeableBytes[6] = instructions.ADD_REG_REG;
+writeableBytes[7] = 2;
+writeableBytes[8] = 3;
 
 debugRegister();
-stepRegister();
 
-debugRegister();
 stepRegister();
+debugRegister();
 
-debugRegister();
 stepRegister();
+debugRegister();
 
-debugRegister();
 stepRegister();
+debugRegister();
